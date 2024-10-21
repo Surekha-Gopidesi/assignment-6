@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+function swapValues(a, b) {
+  [a, b] = [b, a];
+  return [a, b];
+}
+let num1 = prompt("Enter first number:");
+let num2 = prompt("Enter second number:");
+
+num1 = parseInt(num1);
+num2 = parseInt(num2);
+
+console.log("Before swap: ", num1, num2);
+alert("Before swap: " + num1 + " " + num2);
+
+[num1, num2] = swapValues(num1, num2);
+console.log("After swap: ", num1, num2);
+alert("After swap: " + num1 + " " + num2);
+
+
+
+    </script>
+</body>
+</html>
